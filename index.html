@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>中国传媒大学校史馆</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css?v0.22122203">
+</head>
+
+<body class="multiple-scenes ">
+<div id="pano"></div>
+
+<!-- 该代码用于调试，迅速切换场景列表转换场景,但是后续功能转换功能基于此，所以千万不可动。  -->
+<div id="sceneList"  style="display: none;">
+  <ul class="scenes">
+      <a href="javascript:void(0)" class="scene" data-id="0-img_1">
+        <li class="text">校史馆入口</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-img_1_return" style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-img_2">
+        <li class="text">展厅前门</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-img_2_return" style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-img_3">
+        <li class="text">中国传媒大学校史馆</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-img_3_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-img_4">
+        <li class="text">进入展馆</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-img_4_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-img_5">
+        <li class="text">初创期</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-img_5_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-img_6"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-img_6_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-img_6-_wall"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-img_7"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-img_8"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-img_8_return" style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-img_9">
+        <li class="text">北京广播学院期</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-img_9_return" style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-img_10"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-img_10_return" style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-img_11"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-img_11_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-img_12">
+        <li class="text">挫折与恢复期</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-img_12_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-img_13"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-img_13_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-img_14"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-img_14_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-img_15">
+        <li class="text">改革开放初期</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-img_15_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-img_16"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-img_16_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-img_17"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-img_17_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-img_18"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-img_18_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-img_19">
+        <li class="text">中国传媒大学时期</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-img_19_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-img_20"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-img_20_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-img_21"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-img_21_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-img_22">
+        <li class="text">中传时期照片墙</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-img_22_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-img_23"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-img_24">
+        <li class="text">教学科研展板</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-img_24_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-img_25">
+        <li class="text">优势专业与精品课程展板</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-img_25_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-img_26"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-img_26_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-img_27">
+        <li class="text">学校领导展板</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-img_27_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-img_28">
+        <li class="text">师者风范展板</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-img_28_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-img_29">
+        <li class="text">核桃林留言板</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-img_29_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-img_30">
+        <li class="text">中传小剧场</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-img_31">
+        <li class="text">结语</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-img_31_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-img_32">
+        <li class="text">站上舞台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-img_33">
+        <li class="text">中传小剧场</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-img_33_return"style="display: none;">
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-img_34">
+        <li class="text">展厅后门</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-img_34_return"style="display: none;">
+      </a>
+    
+  </ul>
+</div>
+
+<!--把界面显示的交互按钮导入 -->
+
+<div id="titleBar">
+  <h1 class="sceneName" style="background-color: transparent;text-shadow: 0px 0px 4px rgb(0 0 0);"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle"  style="display:none">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle"  style="display:none">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle"  style="display:none">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<!-- 虚拟显示屏设置 -->
+<div class="invisible">
+  <div id="iframespot">
+    <div class="message">点击左边按钮来了解详情</div>
+  </div>
+
+  <ul id="iframeselect">
+    <li data-source="past_master">历任校长</li>
+    <li data-source="past_secretary">历任书记</li>
+    <li data-source="past_vice_secretary">历任副书记</li>
+    <li data-source="past_vice_master">历任副校长</li>
+    <li data-source="past_training">训练班</li>
+  </ul>
+</div>
+
+<!-- 全局音频，音频来源暂时不给，在设计上是必须用户先点击进入校史馆时才开始播放 -->
+<audio id="bgAudio" autoplay loop>
+  <source type="audio/mpeg"  src = "audio/school_anthem.mp3" >
+</audio>
+
+
+<!-- 全局视频容器，数字人解说视频容器，固定在屏幕的某个位置 -->
+<div id="videoContainer" style=" position: fixed; bottom: -20px; right: 30px; z-index: 998;">
+  <!-- 视频播放器 -->
+  <video id="localVideoPlayer" width="420" height="340" controls autoplay>
+    <source  type="video/webm">
+  </video>
+</div>
+
+<!-- 数字人动作视频容器，初始状态隐藏，跟上面的一样，只是为了加载速度所以做了两个这样就不需要切换加载了 -->
+<div id="newVideoContainer" style="display: none; position: fixed; bottom: -20px; right: 30px; z-index: 998;">
+  <!-- 新的视频播放器 -->
+  <video id="newVideoPlayer" width="420" height="340" controls>
+    <source  type="video/webm">
+  </video>
+</div>
+
+<!--数字人交互UI-->
+<div id="ui-container" style=" z-index: 999;">
+  <div id="left-sidebar">
+      <button class="sidebar-button" id="info-button">
+          <img src="images/info_normal.png" alt="Info Button">
+      </button>
+      <button class="sidebar-button" id="plugin-button">
+          <img src="images/plugin_normal.png" alt="Plugin Button">
+      </button>
+      <button class="sidebar-button" id="setting-button">
+          <img src="images/setting_normal.png" alt="Setting Button">
+      </button>
+  </div>
+
+  <div id="info-list" class="list-container">
+    
+      <!-- Info 主按钮对应的列表 -->
+      <button class="small-button" data-type="info"> 
+         <span class="button-text">数字人切换</span>
+        <img src="images/small_button.png"></button>
+
+      <button class="small-button" data-type="info">
+        <span class="button-text">音色切换</span>
+        <img src="images/small_button.png"></button>
+
+      <button class="small-button" data-type="info">
+        <span class="button-text">数字人换装</span>
+        <img src="images/small_button.png" ></button>
+      
+      <button class="small-button" data-type="info">
+        <span class="button-text">感谢</span>
+        <img src="images/small_button.png"></button>
+      
+      <button class="small-button" data-type="info">
+        <span class="button-text">提问</span>
+        <img src="images/small_button.png" ></button>
+    </div>
+
+
+  <div id="plugin-list" class="list-container">
+     
+      <!-- Plugin 主按钮对应的列表 -->
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">校史馆入口</span>
+        <img src="images/small_button.png" ></button>
+        
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">展厅前门</span>
+        <img src="images/small_button.png" ></button>
+      
+        
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">进入展馆</span>
+        <img src="images/small_button.png" ></button> 
+      
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">初创期</span>
+        <img src="images/small_button.png" ></button>
+
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">广院时期</span>
+        <img src="images/small_button.png" ></button>      
+    
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">挫折与恢复期</span>
+        <img src="images/small_button.png" ></button>
+     
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">改革开放初期</span>
+        <img src="images/small_button.png" ></button>
+        
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">中传时期</span>
+        <img src="images/small_button.png" ></button>
+      
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">教学科研展板</span>
+        <img src="images/small_button.png" ></button>
+        
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">专业课程展板</span>
+        <img src="images/small_button.png" ></button>
+
+      <button class="small-button" data-type="plugin">
+        <span class="button-text">学校领导展板</span>
+        <img src="images/small_button.png" ></button>   
+
+     <button class="small-button" data-type="plugin">
+        <span class="button-text">师者风范展板</span>
+        <img src="images/small_button.png" ></button>  
+        
+     <button class="small-button" data-type="plugin">
+        <span class="button-text">核桃林留言板</span>
+        <img src="images/small_button.png" ></button>  
+        
+     <button class="small-button" data-type="plugin">
+        <span class="button-text">中传小剧场</span>
+        <img src="images/small_button.png" ></button>       
+      
+     <button class="small-button" data-type="plugin">
+        <span class="button-text">站上舞台</span>
+        <img src="images/small_button.png" ></button>     
+        
+     <button class="small-button" data-type="plugin">
+        <span class="button-text">结语</span>
+        <img src="images/small_button.png" ></button>   
+
+     <button class="small-button" data-type="plugin">
+        <span class="button-text">展厅后门</span>
+        <img src="images/small_button.png" ></button>     
+  </div>
+
+  <div id="setting-list" class="list-container">
+     
+      <!-- Setting 主按钮对应的列表 -->
+      <button class="small-button"data-type="settings">
+        <span class="button-text">自动旋转</span>
+        <img src="images/small_button.png" ></button>   
+
+      <button class="small-button"data-type="settings">
+        <span class="button-text">全屏</span>
+        <img src="images/small_button.png" ></button>   
+      
+      <button class="small-button"data-type="settings">
+        <span class="button-text">背景乐开关</span>
+        <img src="images/small_button.png" ></button>       
+      
+  </div>
+
+</div>
+<!-- 引入外部脚本 -->
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+<script src="data.js"></script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
